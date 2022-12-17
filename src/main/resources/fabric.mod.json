@@ -12,7 +12,6 @@
   "contact": {
     "repo": "https://github.com/MeteorDevelopment/meteor-addon-template"
   },
-  "icon": "assets/bbcaddon/icon.png",
   "environment": "client",
   "entrypoints": {
     "meteor": [
