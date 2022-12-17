@@ -56,7 +56,7 @@ public class PacketMine extends BBCModule {
     private final PacketUtils packets = new PacketUtils();
 
     public PacketMine() {
-        super(BBCAddon.Misc, "Mining+", "Automatically breaks blocks via packets");
+        super(BBCAddon.BBC, "Mining+", "Automatically breaks blocks via packets");
     }
 
     @Override

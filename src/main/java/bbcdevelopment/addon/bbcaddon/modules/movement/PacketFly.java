@@ -343,7 +343,7 @@ public class PacketFly extends BBCModule {
     private static final Random random = new Random();
 
     public PacketFly() {
-        super(BBCAddon.Movement, "packet-fly", "Fly with packets (ported from Konas).");
+        super(BBCAddon.BBC, "packet-fly", "Fly with packets (ported from Konas).");
     }
 
     @Override

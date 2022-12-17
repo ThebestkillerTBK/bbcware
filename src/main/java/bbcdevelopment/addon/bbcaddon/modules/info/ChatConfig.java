@@ -22,7 +22,7 @@ public class ChatConfig extends BBCModule {
     private final Setting<ChatFormatting> formattingMode = sgGeneral.add(new EnumSetting.Builder<ChatFormatting>().name("mode").description("The style of messages.").defaultValue(ChatFormatting.Bold).visible(chatFormatting::get).build());
 
     public ChatConfig() {
-        super(BBCAddon.Info, "chat-config", "The way to render chat messages.");
+        super(BBCAddon.BBC, "chat-config", "The way to render chat messages.");
     }
 
     @Override

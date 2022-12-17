@@ -9,7 +9,6 @@ import bbcdevelopment.addon.bbcaddon.utils.entity.TargetHelper;
 import bbcdevelopment.addon.bbcaddon.utils.math.TimerUtils;
 import bbcdevelopment.addon.bbcaddon.utils.player.InvHelper;
 import bbcdevelopment.addon.bbcaddon.utils.player.PlayerHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockPosX;
 import bbcdevelopment.addon.bbcaddon.utils.world.DamageHelper;
@@ -58,7 +57,7 @@ import java.util.concurrent.Executors;
 
 public class BogeyMan extends BBCModule {
     public BogeyMan() {
-        super(BBCAddon.Combat, "Boogey Man", "Automatically place's and blows up beds.");
+        super(BBCAddon.BBC, "Boogey Man", "Automatically place's and blows up beds.");
     }
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();

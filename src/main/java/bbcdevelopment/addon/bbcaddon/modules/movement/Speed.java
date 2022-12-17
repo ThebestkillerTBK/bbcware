@@ -28,7 +28,7 @@ import java.math.RoundingMode;
 
 public class Speed extends BBCModule {
     public Speed(){
-        super(BBCAddon.Movement, "Speedy", "");
+        super(BBCAddon.BBC, "Speedy", "");
     }
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
     private final SettingGroup sgBoost = settings.createGroup("Boost");

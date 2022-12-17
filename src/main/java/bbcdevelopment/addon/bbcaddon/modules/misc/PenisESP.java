@@ -36,7 +36,7 @@ public class PenisESP extends BBCModule {
     public Setting<SettingColor> headColor = sgRender.add(new ColorSetting.Builder().name("head-color").defaultValue(new SettingColor(240, 50, 180,75)).build());
 
     public PenisESP() {
-        super(BBCAddon.Misc, "Penis ESP", "Innovative latest state of art module");
+        super(BBCAddon.BBC, "Penis ESP", "Innovative latest state of art module");
     }
 
     @EventHandler

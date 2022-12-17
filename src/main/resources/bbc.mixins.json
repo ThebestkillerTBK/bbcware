@@ -7,7 +7,6 @@
     "LightningBoltRendererMixin",
     "ClientPlayerInteractionManagerMixin",
     "WorldChunkMixin",
-    "LivingEntityMixin",
     "meteor.ChatUtilsMixin",
     "PlayerPositionLookS2CPacketAccessor"
   ],

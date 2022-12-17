@@ -98,7 +98,7 @@ public class DeathCrystal extends BBCModule {
     private final Setting<SettingColor> lineColor = sgRender.add(new ColorSetting.Builder().name("line-color").defaultValue(new SettingColor(255, 0, 170, 90)).visible(render::get).build());
 
     public DeathCrystal() {
-        super(BBCAddon.Combat, "death-crystal", "Automatically places and blows up crystals.");
+        super(BBCAddon.BBC, "death-crystal", "Automatically places and blows up crystals.");
     }
 
     private final ExecutorService thread = Executors.newCachedThreadPool();

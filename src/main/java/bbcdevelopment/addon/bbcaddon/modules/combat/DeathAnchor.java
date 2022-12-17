@@ -7,7 +7,6 @@ import bbcdevelopment.addon.bbcaddon.modules.BBCModule;
 import bbcdevelopment.addon.bbcaddon.utils.entity.TargetHelper;
 import bbcdevelopment.addon.bbcaddon.utils.math.TimerUtils;
 import bbcdevelopment.addon.bbcaddon.utils.player.InvHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockPosX;
 import bbcdevelopment.addon.bbcaddon.utils.world.DamageHelper;
@@ -50,7 +49,7 @@ import java.util.concurrent.Executors;
 
 public class DeathAnchor extends BBCModule {
     public DeathAnchor(){
-        super(BBCAddon.Combat, "Death Anchor", "");
+        super(BBCAddon.BBC, "Death Anchor", "");
     }
 
     private final SettingGroup sgPlacing = settings.createGroup("Placing");

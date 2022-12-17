@@ -3,7 +3,6 @@ package bbcdevelopment.addon.bbcaddon.modules.combat;
 import bbcdevelopment.addon.bbcaddon.BBCAddon;
 import bbcdevelopment.addon.bbcaddon.modules.BBCModule;
 import bbcdevelopment.addon.bbcaddon.utils.player.InvHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
 import meteordevelopment.meteorclient.events.world.TickEvent;
 import meteordevelopment.meteorclient.settings.*;
@@ -46,7 +45,7 @@ public class QuickMend extends BBCModule {
     private final Setting<Boolean> pauseOnMine = sgMisc.add(new BoolSetting.Builder().name("pause-on-mine").description("Pause placing while mining.").defaultValue(false).build());
 
     public QuickMend(){
-        super(BBCAddon.Combat, "quick-mend", "");
+        super(BBCAddon.BBC, "quick-mend", "");
     }
 
     @Override

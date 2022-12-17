@@ -20,8 +20,7 @@ public abstract class EntityMixin {
     @Inject(method = "move", at = @At("HEAD"))
     private void onMove(MovementType type, Vec3d movement, CallbackInfo info) {
         if ((Object) this == mc.player) {
-            PlayerMoveEvent event = PlayerMoveEvent.get(type, movement);
-            MeteorClient.EVENT_BUS.post(PlayerMoveEvent.get(type, movement));
+            PlayerMoveEvent event = MeteorClient.EVENT_BUS.post(PlayerMoveEvent.get(type, movement));
             if (event.isCancelled()) event.cancel();
         }
     }

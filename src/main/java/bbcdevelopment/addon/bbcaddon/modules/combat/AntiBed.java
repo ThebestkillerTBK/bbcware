@@ -3,7 +3,6 @@ package bbcdevelopment.addon.bbcaddon.modules.combat;
 import bbcdevelopment.addon.bbcaddon.BBCAddon;
 import bbcdevelopment.addon.bbcaddon.modules.BBCModule;
 import bbcdevelopment.addon.bbcaddon.utils.player.InvHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockPosX;
 import bbcdevelopment.addon.bbcaddon.utils.world.DamageHelper;
@@ -37,7 +36,7 @@ import java.util.List;
 
 public class AntiBed extends BBCModule {
     public AntiBed(){
-        super(BBCAddon.Combat, "anti-bed+", "");
+        super(BBCAddon.BBC, "anti-bed+", "");
     }
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();

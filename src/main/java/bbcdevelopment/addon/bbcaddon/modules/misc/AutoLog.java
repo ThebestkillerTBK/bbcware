@@ -36,7 +36,7 @@ import static bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper.distance;
 
 public class AutoLog extends BBCModule {
     public AutoLog(){
-        super(BBCAddon.Misc, "auto-log+", "");
+        super(BBCAddon.BBC, "auto-log+", "");
     }
 
     private final SettingGroup sgPing = settings.createGroup("Ping");

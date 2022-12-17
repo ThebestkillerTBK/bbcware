@@ -3,7 +3,6 @@ package bbcdevelopment.addon.bbcaddon.modules.combat;
 import bbcdevelopment.addon.bbcaddon.BBCAddon;
 import bbcdevelopment.addon.bbcaddon.modules.BBCModule;
 import bbcdevelopment.addon.bbcaddon.utils.entity.TargetHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
 import meteordevelopment.meteorclient.events.world.TickEvent;
@@ -37,7 +36,7 @@ import java.util.stream.Collectors;
 
 public class CevBreaker extends BBCModule {
     public CevBreaker(){
-        super(BBCAddon.Combat, "cev-breaker", "");
+        super(BBCAddon.BBC, "cev-breaker", "");
     }
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();

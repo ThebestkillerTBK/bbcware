@@ -155,7 +155,7 @@ public class Util {
     }
 
     public static OtherClientPlayerEntity predictedTarget(PlayerEntity player) {
-        OtherClientPlayerEntity fakeTarget = new OtherClientPlayerEntity(mc.world, player.getGameProfile(), player.getPublicKey());
+        OtherClientPlayerEntity fakeTarget = new OtherClientPlayerEntity(mc.world, player.getGameProfile());
         fakeTarget.setHealth(player.getHealth());
         fakeTarget.setAbsorptionAmount(player.getAbsorptionAmount());
         fakeTarget.getInventory().clone(player.getInventory());

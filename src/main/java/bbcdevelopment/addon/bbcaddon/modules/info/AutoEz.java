@@ -131,7 +131,7 @@ public class AutoEz extends BBCModule {
     private int popTimer;
 
     public AutoEz() {
-        super(BBCAddon.Info, "AutoEz", "Sends a msg in chat when you kill someone");
+        super(BBCAddon.BBC, "AutoEz", "Sends a msg in chat when you kill someone");
     }
     {
 

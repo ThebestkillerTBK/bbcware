@@ -2,7 +2,6 @@ package bbcdevelopment.addon.bbcaddon.utils.world;
 
 import it.unimi.dsi.fastutil.ints.Int2ObjectArrayMap;
 import meteordevelopment.meteorclient.mixininterface.IClientPlayerInteractionManager;
-import meteordevelopment.meteorclient.systems.modules.Modules;
 import meteordevelopment.meteorclient.utils.player.FindItemResult;
 import meteordevelopment.meteorclient.utils.player.Rotations;
 import net.minecraft.block.*;
@@ -181,7 +180,7 @@ public class Place {
         return bp.of(CraftingTableBlock.class)
                 || bp.of(FurnaceBlock.class)
                 || bp.of(AnvilBlock.class)
-                || bp.of(AbstractButtonBlock.class)
+                || bp.of(ButtonBlock.class)
                 || bp.of(BlockWithEntity.class)
                 || bp.of(BedBlock.class)
                 || bp.of(FenceGateBlock.class)

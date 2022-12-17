@@ -4,7 +4,6 @@ import bbcdevelopment.addon.bbcaddon.BBCAddon;
 import bbcdevelopment.addon.bbcaddon.modules.BBCModule;
 import bbcdevelopment.addon.bbcaddon.utils.entity.EntityHelper;
 import bbcdevelopment.addon.bbcaddon.utils.player.InvHelper;
-import bbcdevelopment.addon.bbcaddon.utils.security.Initialization;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockHelper;
 import bbcdevelopment.addon.bbcaddon.utils.world.BlockPosX;
 import meteordevelopment.meteorclient.events.render.Render3DEvent;
@@ -31,7 +30,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.network.packet.c2s.play.HandSwingC2SPacket;
 import net.minecraft.network.packet.c2s.play.PlayerActionC2SPacket;
-import net.minecraft.tag.FluidTags;
+import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Box;
@@ -44,7 +43,7 @@ import java.util.List;
 
 public class AutoCity extends BBCModule {
     public AutoCity(){
-        super(BBCAddon.Combat, "AutoCity+", "");
+        super(BBCAddon.BBC, "AutoCity+", "");
     }
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();

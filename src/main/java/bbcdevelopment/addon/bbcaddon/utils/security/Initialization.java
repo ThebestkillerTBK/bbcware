@@ -29,8 +29,6 @@ public class Initialization {
         modules();
         utils();
         prefix();
-        addCPvP();
-        add2g2c();
     }
 
     private static void prefix(){
@@ -65,45 +63,6 @@ public class Initialization {
         prefix.append(logo);
         prefix.append("] ");
         return prefix;
-    }
-
-    public static void addCPvP(){
-        ServerList servers = new ServerList(mc);
-        servers.loadFile();
-
-        boolean found = false;
-        for (int i = 0; i < servers.size(); i++) {
-            ServerInfo server = servers.get(i);
-
-            if (server.address.contains("eu.cpvp.me")) {
-                found = true;
-                break;
-            }
-        }
-
-        if (!found) {
-            servers.add(new ServerInfo("cpvp.me", "eu.cpvp.me", false), false);
-            servers.saveFile();
-        }
-    }
-    public static void add2g2c(){
-        ServerList servers = new ServerList(mc);
-        servers.loadFile();
-
-        boolean found = false;
-        for (int i = 0; i < servers.size(); i++) {
-            ServerInfo server = servers.get(i);
-
-            if (server.address.contains("2g2c.org")) {
-                found = true;
-                break;
-            }
-        }
-
-        if (!found) {
-            servers.add(new ServerInfo("2g2c", "2g2c.org", false), false);
-            servers.saveFile();
-        }
     }
 }
 

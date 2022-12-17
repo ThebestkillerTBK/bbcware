@@ -20,17 +20,13 @@ import java.util.Random;
 
 public class KillEffect extends BBCModule {
     public KillEffect(){
-        super(BBCAddon.Misc, "Effects", "");
+        super(BBCAddon.BBC, "Effects", "");
     }
-
-    private static final File SOUNDS_FOLDER = new File(BBCAddon.FOLDER, "sounds");
-    private static final String DEFAULT_SOUND = "finalfantasy.mp3";
 
     private final SettingGroup sgGeneral = settings.getDefaultGroup();
 
     private final SettingGroup sgThunder = settings.createGroup("Thunder");
     private final SettingGroup sgTitle = settings.createGroup("Title");
-    private final SettingGroup sgSound = settings.createGroup("Sound");
 
     private final Setting<Boolean> ignoreSelf = sgGeneral.add(new BoolSetting.Builder().name("ignore-self").defaultValue(true).build());
     private final Setting<Boolean> ignoreFriends = sgGeneral.add(new BoolSetting.Builder().name("ignore-friends").defaultValue(true).build());
@@ -106,21 +102,5 @@ public class KillEffect extends BBCModule {
     private String getString(String s, PlayerEntity player){
         if (s.contains("{player}")) s = s.replace("{player}", playerFormatting.get() + player.getEntityName() + textFormatting.get());
         return s;
-    }
-
-    public String[] getAvailableSounds() {
-        List<String> sounds = new ArrayList<>(1);
-
-        File[] files = SOUNDS_FOLDER.listFiles(File::isFile);
-        if (files != null) {
-            for (File file : files) {
-                int i = file.getName().lastIndexOf('.');
-                if (file.getName().substring(i).equals(".mp3")) {
-                    sounds.add(file.getName().substring(0, i));
-                }
-            }
-        }
-
-        return sounds.toArray(new String[0]);
     }
 }

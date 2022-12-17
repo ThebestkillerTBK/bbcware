@@ -62,7 +62,7 @@ public class  RPC extends BBCModule {
     private int line2Ticks, line2I;
 
     public RPC() {
-        super(BBCAddon.Info, "RPC", "Displays BBC as your presence on Discord.");
+        super(BBCAddon.BBC, "RPC", "Displays BBC as your presence on Discord.");
 
         runInMainMenu = true;
     }

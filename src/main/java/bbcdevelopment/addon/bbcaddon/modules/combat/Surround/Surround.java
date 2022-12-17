@@ -64,7 +64,7 @@ public class Surround extends BBCModule {
     private int interval;
 
     public Surround() {
-        super(BBCAddon.Combat, "Surround+", "Surrounds you in blocks to prevent massive crystal damage.");
+        super(BBCAddon.BBC, "Surround+", "Surrounds you in blocks to prevent massive crystal damage.");
     }
 
     @Override
